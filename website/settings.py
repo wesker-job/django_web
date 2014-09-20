@@ -68,7 +68,7 @@ DATABASES = {
     'NAME': 'mydb', 
     'USER': 'root', # Not used with sqlite3. 
     'PASSWORD': 'sqladmin', # Not used with sqlite3. 
-    'HOST': '127.0.0.1', # Set to empty string for localhost. Not used with sqlite3. 'PORT':'3306',
+    'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3. 'PORT':'3306',
     'PORT': '3306',
     #'default': {
     #    'ENGINE': 'django.db.backends.sqlite3',

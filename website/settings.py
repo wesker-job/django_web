@@ -61,6 +61,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< HEAD
   'default': { 
     'ENGINE': 'django.db.backends.mysql', 
   # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'. 'NAME': 'mydb ', 
@@ -75,15 +76,27 @@ DATABASES = {
     #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     #}
   }
+=======
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+>>>>>>> bcad12b49ebbd64bfa93763d000e20d4c7330a49
 }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
+<<<<<<< HEAD
 TIME_ZONE = 'Asia/Taipei'
 LANGUAGE_CODE = 'zh-tw'
 #LANGUAGE_CODE = 'zh-TW'#'en-us'
 #TIME_ZONE = 'Asia/Taipei'#'UTC'
+=======
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+>>>>>>> bcad12b49ebbd64bfa93763d000e20d4c7330a49
 
 USE_I18N = True
 

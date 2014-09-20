@@ -23,8 +23,6 @@ def current_datetime(request):
 #  html = "<html><body>It is now %s.</body></html>" % now
 #  return HttpResponse(html)
 
-<<<<<<< HEAD
-=======
 #def hours_ahead(request, hour_offset):
   #try:
   #  hour_offset = int(hour_offset)
@@ -33,7 +31,6 @@ def current_datetime(request):
   #next_time = datetime.datetime.now() + datetime.timedelta(hours=hour_offset)
   #return render_to_response('test/hours)ahead.html',{'hour_offset':hour_offset,'next_time':next_time})
   #return render_to_response('test/hours_ahead.html', locals())
->>>>>>> bcad12b49ebbd64bfa93763d000e20d4c7330a49
   #html = "<html><body>In %s hour(s), it will be %s.</body></html>" % (offset, dt)
   #return HttpResponse(html)
 def hours_ahead(request, hour_offset):
@@ -42,9 +39,6 @@ def hours_ahead(request, hour_offset):
   except ValueError:
     raise Http404()
   next_time = datetime.datetime.now() + datetime.timedelta(hours=hour_offset)
-<<<<<<< HEAD
   return render_to_response('test/hours_ahead.html', locals())
   #return render_to_response('test/hours_ahead.html', ({'hour_offset':hour_offset,'next_time':next_time}))
-=======
-  return render_to_response('test/hours_ahead.html', ({'hour_offset':hour_offset,'next_time':next_time}))
->>>>>>> bcad12b49ebbd64bfa93763d000e20d4c7330a49
+  #return render_to_response('test/hours_ahead.html', ({'hour_offset':hour_offset,'next_time':next_time}))

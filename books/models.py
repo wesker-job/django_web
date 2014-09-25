@@ -14,16 +14,8 @@ class Publisher(models.Model):
 class Author(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=40)
-<<<<<<< HEAD
     email = models.EmailField(blank=True, null=True, verbose_name='郵件')
     #email = models.EmailField()
-=======
-<<<<<<< HEAD
-    email = models.EmailField(blank=True, null=True, verbose_name='郵件')
-=======
-    email = models.EmailField()
->>>>>>> ad73372fd623d7ef61c6f5a331067ca592d7e73c
->>>>>>> 1b3c135edc7def09d57ec00017704174beb30e57
 
     def __str__(self):
         return u'%s %s' % (self.first_name, self.last_name)

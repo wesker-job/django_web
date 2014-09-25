@@ -42,3 +42,8 @@ def hours_ahead(request, hour_offset):
   return render_to_response('test/hours_ahead.html', locals())
   #return render_to_response('test/hours_ahead.html', ({'hour_offset':hour_offset,'next_time':next_time}))
   #return render_to_response('test/hours_ahead.html', ({'hour_offset':hour_offset,'next_time':next_time}))
+
+def display_meta(request):
+  values = request.META.items()
+  values = sorted(values)
+  return render_to_response('test/display_meta.html', locals())  
